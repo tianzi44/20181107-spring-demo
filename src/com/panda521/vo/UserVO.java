@@ -1,4 +1,4 @@
-package com.panda521;
+package com.panda521.vo;
 
 /**
  * Created by jack on 2018/11/7.
