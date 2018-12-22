@@ -1,4 +1,4 @@
-package com.panda521.test;
+package test;
 
 import com.panda521.service.Service1;
 import com.panda521.vo.UserVO;
