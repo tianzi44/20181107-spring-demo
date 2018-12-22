@@ -1,4 +1,4 @@
-package test;
+package com.panda521;
 
 import com.panda521.service.Service1;
 import com.panda521.vo.UserVO;
@@ -18,7 +18,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = {"classpath:applicationContext.xml"})
-public class SpringTest {
+public class SpringDemoTest {
     @Before
     public void init() {
         System.out.println("做做准备工作");
