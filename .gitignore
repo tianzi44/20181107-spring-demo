@@ -2,3 +2,5 @@
 /.idea
 /out
 /target
+/log/2018-12/*.log
+/log

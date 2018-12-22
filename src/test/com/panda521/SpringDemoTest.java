@@ -3,6 +3,8 @@ package com.panda521;
 import com.panda521.service.Service1;
 import com.panda521.vo.UserVO;
 import com.panda521.vo.UserVO2;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -19,6 +21,8 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = {"classpath:applicationContext.xml"})
 public class SpringDemoTest {
+    Logger logger = LogManager.getLogger(SpringDemoTest.class);
+
     @Before
     public void init() {
         System.out.println("做做准备工作");
@@ -32,6 +36,8 @@ public class SpringDemoTest {
         userVO.setName("貂蝉");
         userVO.setAge(18);
         System.out.println(userVO);
+        System.out.println(logger);
+        logger.warn("log4j2的日志打印了userVO" + userVO);
     }
 
     @Test

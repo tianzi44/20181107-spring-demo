@@ -1,7 +1,8 @@
 package com.panda521;
 
 import com.panda521.vo.UserVO;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -12,7 +13,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class SpringDemoApplication {
 
-    public static Logger logger = Logger.getLogger(SpringDemoApplication.class);
+    public static Logger logger = LogManager.getLogger(SpringDemoApplication.class);
 
     public static void main(String[] args) {
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
